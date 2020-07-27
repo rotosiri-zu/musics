@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\post;
+use App\Post;
 use Faker\Generator as Faker;
 
-$factory->define(post::class, function (Faker $faker) {
+$factory->define(Post::class, function (Faker $faker) {
     return [
         'title' => 'New Romantic Sailors',
         'image' => 'imageUrl',
