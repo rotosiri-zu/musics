@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\post;
 
 class PostTableSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class PostTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call(PostsTableSeeder::class);
     }
 }
