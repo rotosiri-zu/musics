@@ -21,6 +21,9 @@
     span.card-price {
       font-size: 20px;
     }
+    ul {
+      list-style: none;
+    }
   </style>
 </head>
 <body>
@@ -34,6 +37,19 @@
 </header>
 
 @yield('content')
+
+<footer>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-md-push-3">
+        <ul>
+          <li><a href="#">トップページ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-muted mt-5">Place sticky footer content here.</p>
+  </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
