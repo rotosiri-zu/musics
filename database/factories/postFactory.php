@@ -8,8 +8,9 @@ use Faker\Generator as Faker;
 $factory->define(Post::class, function (Faker $faker) {
     return [
         'title' => 'New Romantic Sailors',
-        'image' => 'imageUrl',
+        'image' => 'image_Url',
         'genre' => 'CD',
+        'price' => 4600,
         'text' => 'ラブライブ!',
     ];
 });
