@@ -24,6 +24,9 @@
     ul {
       list-style: none;
     }
+    h1 {
+      font-size: 20px;
+    }
   </style>
 </head>
 <body>
@@ -31,7 +34,7 @@
   <nav class="navbar navbar-expand bg-info navbar-dark">
     <a class="navbar-brand text-white" href="{{url('')}}">ラブライブ!</a>
     <div class="navbar-nav">
-      <a class="nav-item nav-link text-white" href="#">投稿画面メニューへ</a>
+      <a class="nav-item nav-link text-white" href="{{ route('posts.create') }}">投稿画面メニューへ</a>
     </div>
   </nav>
 </header>

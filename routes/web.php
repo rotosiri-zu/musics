@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'postscontroller@index');
+Route::get('/', 'postscontroller@index')->name('top');
 
 Route::resource('posts', 'postsController', ['only' => ['create', 'store']]);

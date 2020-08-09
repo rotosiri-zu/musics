@@ -16,7 +16,7 @@
             <p class="card-genre mb-0">
               {{$post->genre}}
             </p>
-            <span class="card-price">¥4600</span>
+            <span class="card-price">¥{{$post->price}}</span>
             <div class="border border-white mt-4">
               <a href="#" class="btn btn-primary">詳細へ</a>
             </div>
