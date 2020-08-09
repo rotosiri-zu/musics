@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'postscontroller@index');
+
+Route::resource('posts', 'postsController', ['only' => ['create', 'store']]);
