@@ -46,7 +46,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-4 col-md-push-3">
         <ul>
-          <li><a href="#">トップページ</a></li>
+          <li><a href="{{url('')}}">トップページ</a></li>
         </ul>
       </div>
     </div>

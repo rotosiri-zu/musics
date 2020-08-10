@@ -8,8 +8,8 @@ class post extends Model
 {
     protected $fillable = [
         'title',
-        'image_url',
+        'image',
         'genre',
-        'text',
+        'price'
     ];
 }

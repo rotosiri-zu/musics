@@ -8,7 +8,7 @@
       @foreach($posts as $post)
       <div class="col">
         <div class="card">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/61zTzR8TbGL._AC_.jpg" alt="..." class="img-thumbnail">
+        <img src="{{$post->image}}" alt="..." class="img-thumbnail">
           <div class="card-body">
             <h5 class="card-title">
               {{$post->title}}

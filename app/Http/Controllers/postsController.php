@@ -18,8 +18,20 @@ class postsController extends Controller
         return view('posts.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        
+        $post = new Post;
+        $post->image = $request->image;
+        $post->title = $request->title;
+        $post->genre = $request->genre;
+        $post->price = $request->price;
+        $post->save();
+        return redirect()->route('top');
+    }
+
+    public function show($post_id)
+    {
+        $post =Post::findOrFail($post_id);
+        return view('posts.show', ['post' => $post]);
     }
 }
