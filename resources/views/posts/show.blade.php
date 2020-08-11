@@ -2,7 +2,6 @@
 
 @section('content')
 
-<main>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -16,11 +15,16 @@
               {{$post->genre}}
             </p>
             <span class="card-price">¥{{$post->price}}</span>
+            <div class="mt-4 text-right">          
+              <a type="submit" class="btn btn-primary" href="{{route('posts.edit', ['post' => $post])}}">
+                編集
+              </a>
           </div>
+         </div>
         </div>
       </div>
     </div>
   </div>
-</main>
+
 
 @endsection('content')
