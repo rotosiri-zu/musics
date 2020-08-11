@@ -34,4 +34,21 @@ class postsController extends Controller
         $post =Post::findOrFail($post_id);
         return view('posts.show', ['post' => $post]);
     }
+
+    public function edit($post_id)
+    {
+        $post = Post::findOrFail($post_id);
+        return view('posts.edit', ['post' => $post]);
+    }
+
+    public function update($post_id, Request $request)
+    {
+        $post =Post::findOrFail($post_id);
+        $post->image = $request->image;
+        $post->title = $request->title;
+        $post->genre = $request->genre;
+        $post->price = $request->price;
+        $post->save();
+        return redirect()->route('top');
+    }
 }
