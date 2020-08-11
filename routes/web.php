@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'postscontroller@index')->name('top');
 
-Route::resource('posts', 'postsController', ['only' => ['create', 'store', 'show', 'edit', 'update']]);
+Route::resource('posts', 'postsController', ['only' => ['create', 'store', 'show', 'edit', 'update', 'destroy']]);

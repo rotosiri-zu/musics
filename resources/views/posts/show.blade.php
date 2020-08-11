@@ -19,6 +19,12 @@
               <a type="submit" class="btn btn-primary" href="{{route('posts.edit', ['post' => $post])}}">
                 編集
               </a>
+
+              <form style="display: inline-block" method="POST" action="{{route('posts.destroy', ['post' => $post])}}">
+                {{csrf_field()}}
+                {{ method_field('DELETE')}}
+                <button class="btn btn-danger">削除</button>
+              </form>
           </div>
          </div>
         </div>

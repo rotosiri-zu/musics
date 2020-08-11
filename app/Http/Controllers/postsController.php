@@ -51,4 +51,12 @@ class postsController extends Controller
         $post->save();
         return redirect()->route('top');
     }
+
+    public function destroy($post_id)
+    {
+        $post =Post::findOrFail($post_id);
+        $post->delete();
+        return redirect()->route('top');
+    }    
+
 }
